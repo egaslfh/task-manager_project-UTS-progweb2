@@ -1,0 +1,17 @@
+{
+  "name": "uts-progweb2-backend",
+  "version": "1.0.0",
+  "description": "Backend task manager dengan PostgreSQL, logging, validasi, dan error handling.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4",
+    "pg": "^8.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
