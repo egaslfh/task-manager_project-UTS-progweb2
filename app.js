@@ -40,7 +40,7 @@ app.post('/task', async (req, res, next) => {
   try {
     const { title, description } = req.body;
     if (!title || !title.toString().trim()) {
-      return res.status(400).json({ error: "Field 'title' tidak boleh kosong atau hanya berisi spasi." });
+      return res.status(400).json({ error: "Field 'title' tidak boleh kosong atau hanya berisi spasi" });
     }
 
     const result = await pool.query(
@@ -60,7 +60,7 @@ app.put('/task/:id', async (req, res, next) => {
     const { title, description, is_complited } = req.body;
 
     if (!title || !title.toString().trim()) {
-      return res.status(400).json({ error: "Field 'title' tidak boleh kosong atau hanya berisi spasi." });
+      return res.status(400).json({ error: "Field 'title' tidak boleh kosong atau hanya berisi spasi" });
     }
 
     const result = await pool.query(
